@@ -61,5 +61,6 @@ X_melt<-melt(X_mean_std,id.vars = c("subject","activity"))
 X_tidy <- dcast(X_melt, subject + activity ~..., mean)
 
 return(X_tidy)
+write.table(X_tidy, file="TidyData_RunAnalysis.txt",row.names = FALSE)
 }
 
