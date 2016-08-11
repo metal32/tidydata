@@ -62,3 +62,4 @@ X_tidy <- dcast(X_melt, subject + activity ~..., mean)
 
 return(X_tidy)
 }
+
